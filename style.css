@@ -11,22 +11,16 @@ body{
     align-items: center;
 }
 #container{
+    background-image: url("background/WhatsApp\ Image\ 2024-06-21\ at\ 12.26.16_45857c1f.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 400px;
     position: relative;
     border-radius: 10px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     height: 550px;
-}
-#image{
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -99;
-    opacity: 0.4;
-    overflow: hidden;
-    border-radius: 15px;
-    height: 100%;
 }
 #top{
     color: white;

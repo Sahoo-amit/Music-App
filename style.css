@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(120deg, rgb(30, 13, 56), rgb(45, 16, 67));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+    height: 550px;
+}
+#image{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+    opacity: 0.4;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 100%;
+}
+#top{
+    color: white;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#top h1{
+    font-size: 3 0px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#top h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box img{
+    margin-top: 15px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+#player{
+    margin: 30px 50px 30px;
+    position: relative;
+}
+#player input{
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: 4px;
+    background: #ffffff65;
+    overflow: hidden;
+}
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 10px;
+    width: 1px;
+    border-radius: 50%;
+    box-shadow: -1200px 0px 0px 1200px rgb(252, 248, 248);
+}
+.start-time, .end-time{
+    font-size: 16px;
+    color: white;
+}
+.end-time{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+#control{
+    margin-bottom: 40px;
+}
+#control span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#control span:nth-child(2){
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+}
+
+@media(max-width:600px){
+    #container{
+        width: 350px;
+    }
+}
